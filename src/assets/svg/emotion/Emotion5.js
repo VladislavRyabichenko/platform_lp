@@ -1,0 +1,21 @@
+import React from 'react'
+import PropTypes from 'prop-types'
+
+const Emotion5 = ({ className, fillColor, fillOpacity }) => {
+  return (
+    <svg className={className} width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fillRule="evenodd" clipRule="evenodd" d="M20 5C28.2843 5 35 11.7157 35 20C35 28.2843 28.2843 35 20 35C11.7157 35 5 28.2843 5 20C5 11.7157 11.7157 5 20 5Z" fill={fillColor} fillOpacity={fillOpacity}/>
+      <path fillRule="evenodd" clipRule="evenodd" d="M28.126 14.4058C28.126 13.5102 27.3999 12.7842 26.5043 12.7842C25.9195 12.7842 25.4088 13.0947 25.1235 13.5589C24.8382 13.0947 24.3273 12.7842 23.7425 12.7842C22.8469 12.7842 22.1211 13.5102 22.1211 14.4058C22.1211 14.8934 22.3372 15.3296 22.6777 15.6266L24.9755 17.9246C25.0148 17.9638 25.068 17.9859 25.1235 17.9859C25.179 17.9859 25.2322 17.9638 25.2715 17.9246L27.5693 15.6266C27.9099 15.3296 28.126 14.8934 28.126 14.4058Z" fill="#15162E"/>
+      <path fillRule="evenodd" clipRule="evenodd" d="M17.876 14.4058C17.876 13.5102 17.1499 12.7842 16.2543 12.7842C15.6695 12.7842 15.1588 13.0947 14.8735 13.5589C14.5882 13.0947 14.0773 12.7842 13.4925 12.7842C12.5969 12.7842 11.8711 13.5102 11.8711 14.4058C11.8711 14.8934 12.0872 15.3296 12.4277 15.6266L14.7255 17.9246C14.7648 17.9638 14.818 17.9859 14.8735 17.9859C14.929 17.9859 14.9822 17.9638 15.0215 17.9246L17.3193 15.6266C17.6599 15.3296 17.876 14.8934 17.876 14.4058H17.876Z" fill="#15162E"/>
+      <path fillRule="evenodd" clipRule="evenodd" d="M12 23.4902C13.1996 32.7726 27.0167 32.7726 27.9988 23.4902C25.3721 29.1202 16.8356 31.0911 12 23.4902Z" fill="#15162E"/>
+    </svg>
+  )
+}
+
+Emotion5.propTypes = {
+  className: PropTypes.string,
+  fillColor: PropTypes.string,
+  fillOpacity: PropTypes.string
+}
+
+export default Emotion5

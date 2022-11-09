@@ -1,0 +1,82 @@
+@import "../assets/fonts/font-face.scss";
+
+@import "./CustomizeSlick.scss";
+@import "./DotsAnimation.scss";
+@import "./Checkbox.scss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  // @apply transition-all duration-75 ease-out;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  @apply bg-white dark:bg-[#060721];
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/* COMMON RADIO */
+input[type="radio"] {
+  /* Hide original inputs */
+  visibility: hidden;
+  position: absolute;
+}
+input[type="radio"] + label:before {
+  height: 16px;
+  width: 16px;
+  margin-right: 6px;
+  content: " ";
+  display: inline-block;
+  vertical-align: sub;
+  border: 1px solid rgba(255, 255, 255, 0.32);
+}
+input[type="radio"]:checked + label:before {
+  background: transparent;
+  border: 4px solid #3076ff;
+}
+
+/* CUSTOM RADIO AND CHECKBOX STYLES */
+input[type="radio"] + label:before {
+  border-radius: 50%;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  select,
+  textarea,
+  input {
+    font-size: 16px;
+  }
+}
+
+/* Remove background color Input Autofill / Autocomplete */
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+/* Remove appreance input number default */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
